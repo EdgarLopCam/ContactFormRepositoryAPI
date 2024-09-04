@@ -10,3 +10,8 @@ Este proyecto es una API REST desarrollada con ASP.NET Core 7 para manejar formu
 - Herramientas de Entity Framework Core:
   ```bash
   dotnet tool install --global dotnet-ef
+
+## Comandos de Migracion EF
+  ```bash
+dotnet ef migrations add InitialCreate -s ContactAPI -p ContactInfrastructure
+dotnet ef database update -s ContactAPI -p ContactInfrastructure
